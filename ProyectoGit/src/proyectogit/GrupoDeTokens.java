@@ -23,14 +23,14 @@ public class GrupoDeTokens {
         int e = 0;
 
         for (int i = 0; i < M.length; i++) {
-            if (M) {
+            /*if (M) {
                 matriz[a] = M[i];
                 a++;               
             } 
             if(e == 2 ) {
                 e = 0;
             }
-            e++;
+            e++;*/
         }
 
         return matriz;
