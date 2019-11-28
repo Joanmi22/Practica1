@@ -16,23 +16,28 @@ public class ProyectoGit {
     /**
      * @param args the command line arguments
      */
-    
-    
-        //Metodo para separar y contar cuantas cadenas has introducido
-    
+    //Metodo para separar y contar cuantas cadenas has introducido
     public static void main(String[] args) {
-      
 
+        StringTokenizer st = new StringTokenizer("Richy=Ajedrez;Joanmi=Futbol;Mario=Programador;Victor=Profesor", "=;", true);
+        GrupoDeTokens gt = new GrupoDeTokens(st.countTokens());
+        String[] matriz = new String[st.countTokens()];
+        int i = 0;
+        String cadena = "";
         
-        StringTokenizer st = new StringTokenizer("Richy=Ajedrez;Joanmi=Futbol;Mario=Programador;Victor=Profesor","=;",true);
-
-        System.out.println("Hay un total de: "+st.countTokens()+" tokens.");
-
-        while (st.hasMoreTokens()) {  System.out.println(st.nextToken());   }
+        System.out.println("Hay un total de: " + st.countTokens() + " tokens.");
+        
+        while (st.hasMoreTokens()) {
+            cadena = st.nextToken();      
+            matriz[i] = cadena;
+            System.out.println(cadena);
+            i++;
+        }
+        
+        gt.AgruparDeDos(matriz);
+        gt.ImprimirMatriz();
+        
 
     }
 
 }
-    
-    
-
