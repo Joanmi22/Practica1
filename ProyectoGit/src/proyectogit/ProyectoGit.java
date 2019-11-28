@@ -16,10 +16,13 @@ public class ProyectoGit {
     /**
      * @param args the command line arguments
      */
+    
+    
+        //Metodo para separar y contar cuantas cadenas has introducido
+    
     public static void main(String[] args) {
       
 
-        //Metodo para separar tokens
         
         StringTokenizer st = new StringTokenizer("Richy=Ajedrez;Joanmi=Futbol;Mario=Programador;Victor=Profesor","=;",true);
 
