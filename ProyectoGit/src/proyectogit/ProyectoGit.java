@@ -20,7 +20,7 @@ public class ProyectoGit {
     public static void main(String[] args) {
 
         StringTokenizer st = new StringTokenizer("Richy=Ajedrez;Joanmi=Futbol;Mario=Programador;Victor=Profesor", "=;", true);
-        GrupoDeTokens gt = new GrupoDeTokens(st.countTokens());
+        GrupoDeTokens gt = new GrupoDeTokens((st.countTokens() /2)+1);
         String[] matriz = new String[st.countTokens()];
         int i = 0;
         String cadena = "";
